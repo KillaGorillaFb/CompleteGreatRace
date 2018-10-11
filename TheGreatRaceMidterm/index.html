@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+Developer: Frankie Barrios
+Date: 10/10/18
+Purose: Implement a page that simulates
+a race between two or more competing players.
+-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body onload="getReady()">
+        <input type="image" src="Light.png" id="start" onclick="startRace()">
+        <!--Starts race, links light img for click event-->
+        <input type="image" src="Light.png" id="start2" onclick="startRace()">
+        <!--needed to turn winner img to start button-->
+        <!--Adding each individual to their own div to be able to store 2 photos
+    One for the race, and 1 for if that person wins to display
+    Also the winner display photo will serve as an onClick to be able to restart game
+    May add restart button as well.-->
+        <div id="cDiv">
+            <img src="Cullen.png" alt="Cullen" id="Cullen" class="racers" />
+            <img src="CullenWins.png" alt="Cullen Wins" id="CullenWins"
+                class="racers" onclick="getReady()" />
+        </div>
+
+        <div id="gDiv">
+            <img src="Greg.png" alt="Greg" id="Greg" class="racers" />
+            <img src="GregWins.png" alt="Greg Wins" id="GregWins" class="racers"
+                onclick="getReady()" />
+        </div>
+
+        <div id="fDiv">
+            <img src="Frankie.png" alt="Frankie" id="Frankie" class="racers" />
+            <img src="FrankieWins.png" alt="Frankie Wins" id="FrankieWins"
+                class="racers" onclick="getReady()" />
+
+        </div>
+
+        <div id="pDiv">
+            <img src="Phillip.png" alt="Phillip" id="Phillip" class="racers" />
+            <img src="PhillipWins.png" alt="Phillip Wins" id="PhillipWins"
+                class="racers" onclick="getReady()" />
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>

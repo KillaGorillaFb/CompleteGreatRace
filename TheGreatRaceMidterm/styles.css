@@ -1,0 +1,60 @@
+/*
+Developer:  Frankie Barrios
+Date: 10/10/18
+Purose: Implement a page that simulates 
+a race between two or more competing players.
+*/
+
+body {
+    background-image: url("College.jpg");
+    background-position: initial;
+}
+
+img {
+    height: auto;
+    width: 115px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+#cDiv {
+    position: absolute;
+    top: 125px;
+    left: 0px;
+}
+
+#gDiv {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+#fDiv {
+    position: absolute;
+    top: 475px;
+    left: 0px;
+}
+
+#pDiv {
+    position: absolute;
+    top: 650px;
+    left: 0px;
+}
+
+#Light {
+    margin: 25px;
+}
+
+#Light:hover {
+    background-color: yellow;
+}
+
+/* #Diploma {
+    position: absolute;
+    right: 0%;
+    height: 300px;
+    width: 500px;
+    bottom: 30%;
+} */
