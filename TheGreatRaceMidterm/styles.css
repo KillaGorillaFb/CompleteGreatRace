@@ -6,13 +6,13 @@ a race between two or more competing players.
 */
 
 body {
-    background-image: url("College.jpg");
-    background-position: initial;
+    background-image: url("College.png");
+    background-position: center top;
 }
 
 img {
-    height: auto;
-    width: 115px;
+    height: 140px;
+    width: 100px;
     border-radius: 25px;
     border-style: solid;
     border-width: 5px;
@@ -21,40 +21,28 @@ img {
 
 #cDiv {
     position: absolute;
-    top: 125px;
+    top: 120px;
     left: 0px;
 }
 
 #gDiv {
     position: absolute;
-    top: 300px;
+    top: 270px;
     left: 0px;
 }
 
 #fDiv {
     position: absolute;
-    top: 475px;
+    top: 420px;
     left: 0px;
 }
 
 #pDiv {
     position: absolute;
-    top: 650px;
+    top: 570px;
     left: 0px;
 }
 
-#Light {
-    margin: 25px;
+#start {
+    right: 50%;
 }
-
-#Light:hover {
-    background-color: yellow;
-}
-
-/* #Diploma {
-    position: absolute;
-    right: 0%;
-    height: 300px;
-    width: 500px;
-    bottom: 30%;
-} */
