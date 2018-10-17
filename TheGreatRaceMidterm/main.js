@@ -74,15 +74,15 @@ function startRace() {
   document.getElementById("start2").style.display = "block"; //Once initial light clicked, this one appears
   document.getElementById("start2").style.height = "110px";
 
-  //Speeds up or slows down racers. Controls movement function.
-  raceSpeed = setInterval(movement, 75); //Runs movement() as fast as interval time set in milliseconds
+  //Runs movement() 
+  raceSpeed = setInterval(movement); 
 }
 
 function movement() {
-  var randCullenPos = Math.floor(Math.random() * 100);
-  var randGregPos = Math.floor(Math.random() * 100);
-  var randFrankiePos = Math.floor(Math.random() * 100);
-  var randPhillipPos = Math.floor(Math.random() * 100);
+  var randCullenPos = Math.floor(Math.random() * 7);//Increase or decrease multiplier to change race speed
+  var randGregPos = Math.floor(Math.random() * 7);
+  var randFrankiePos = Math.floor(Math.random() * 7);
+  var randPhillipPos = Math.floor(Math.random() * 7);
 
   //Adds random gen position advance to current position value to move player
   cPos += randCullenPos;
